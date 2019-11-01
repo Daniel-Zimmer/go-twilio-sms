@@ -26,6 +26,6 @@ func main() {
   to   := "+12027654321"
 
   err := service.SendSms(from, to, "Your Message Here!")
-  if err != nil {	log.Print(err) }
+  if err != nil { log.Print(err) }
 }
 ```
