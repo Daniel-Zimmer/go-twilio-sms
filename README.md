@@ -12,7 +12,7 @@ When the request is unsuccessful, **SendSms()** returns an error containing the 
 package main
 
 import (
-	twilio "go-twilio-sms"
+	"github.com/Daniel-Zimmer/go-twilio-sms"
 	"log"
 )
 
