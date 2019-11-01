@@ -9,14 +9,23 @@ When the request is unsuccessful, **SendSms()** returns an error containing the 
 
 ## Example
 ```go
-accountSid := "XXXXXX"
-authToken  := "XXXXXX"
+package main
 
-service := twilio.NewService(accountSid, authToken)
+import (
+	twilio "go-twilio-sms"
+	"log"
+)
 
-from := "+12021234567"
-to   := "+12027654321"
+func main() {
+  accountSid := "XXXXXX"
+  authToken  := "XXXXXX"
 
-err := service.SendSms(from, to, "Your Message Here!")
-if err != nil {	log.Print(err) }
+  service := twilio.NewService(accountSid, authToken)
+
+  from := "+12021234567"
+  to   := "+12027654321"
+
+  err := service.SendSms(from, to, "Your Message Here!")
+  if err != nil {	log.Print(err) }
+}
 ```
