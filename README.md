@@ -17,15 +17,15 @@ import (
 )
 
 func main() {
-  accountSid := "XXXXXX"
-  authToken  := "XXXXXX"
+	accountSid := "XXXXXX"
+	authToken  := "XXXXXX"
 
-  service := twilio.NewService(accountSid, authToken)
+	service := twilio.NewService(accountSid, authToken)
+	
+	from := "+12021234567"
+	to   := "+12027654321"
 
-  from := "+12021234567"
-  to   := "+12027654321"
-
-  err := service.SendSms(from, to, "Your Message Here!")
-  if err != nil { log.Print(err) }
+	err := service.SendSms(from, to, "Your Message Here!")
+	if err != nil { log.Print(err) }
 }
 ```
