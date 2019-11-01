@@ -3,7 +3,7 @@
 
 ## Overview
 
-**go-twilio-sms** simply creates a service that makes http request to **twilio** to send SMSs.
+**go-twilio-sms** simply creates a service that makes http requests to **twilio** to send SMSs.
 
 When the request is unsuccessful, **SendSms()** returns an error containing the message returned by the request.
 
